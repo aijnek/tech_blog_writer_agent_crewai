@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "tech-blog-writer-agent-crewai"
+version = "0.1.0"
+description = "multi-agent system for writing technical blogs based on multiple scrap articles using crewAI"
+authors = ["aijnek <aijnek@outlook.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.12,<=3.13"
+crewai = {extras = ["tools"], version = "^0.36.0"}
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
